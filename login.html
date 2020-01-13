@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang='en'>
+<head>
+	<meta charset="UTF-8">
+	<link href="style.css" rel="stylesheet" type="text/css"/>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+
+
+</head>
+<body>
+	<div id="regForm" >
+		
+  <img src="logo.png" > 
+  
+ <h2> Health Care</h2>
+
+<div class="login-page">
+  <div class="form">
+   
+    <form class="login-form">
+      <input type="email" placeholder="email" class="email" id="email1"/>
+      <input type="password" placeholder="password" id="password1"/>
+      <p >&nbsp&nbsp&nbspRemember me 
+      <input type="checkbox" name="rememberme" value="r">  <a href="#" style="text-decoration: none;" >Forget Password ? </p>
+      <button id="lgn">login</button>
+      <p class="message">Not registered? <a href="#">Create an account</a></p>
+    </form>
+  </div>
+</div>
+</div>
+
+<script type="text/javascript">
+$(function() {
+$("#lgn").on('click', function() {
+var email = $("#email1").val();
+var password = $("#password1").val();
+if( email =='' || password ==''){
+alert("Enter Feilds");
+}
+else if(password.length<6)
+{
+alert("enter valid passsword");
+}
+});
+});
+
+</script>
+
+</body>
+</html>
